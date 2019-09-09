@@ -3,7 +3,7 @@
 #' Parses a set of files found in the `testthat` directory inside a docker
 #' container.
 #' 
-#' @param dir        Directory where unit tests are written
+#' @param tests_path     Directory where unit tests are written
 #' 
 #' @return 
 #' 
@@ -22,13 +22,13 @@
 #' <https://prairielearn.readthedocs.io/en/latest/externalGrading/#grading-results>
 #' 
 #' @export
-run_testthat = function(dir = "testthat") {
+run_testthat = function(tests_path = "testthat") {
   
   # Begin the process of grading each student's code
   # Add a capture statement to avoid allowing students to output
   # content to console.
   log <- utils::capture.output({
-    test_data <- as.data.frame(testthat::test_dir("testthat",
+    test_data <- as.data.frame(testthat::test_dir(tests_path,
                               reporter = CustomListReporter))
   })
   

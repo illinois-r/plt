@@ -4,10 +4,10 @@
 \alias{run_testthat}
 \title{Automatically Test a Set of Unit Tests in a Directory}
 \usage{
-run_testthat(dir = "testthat")
+run_testthat(tests_path = "testthat")
 }
 \arguments{
-\item{dir}{Directory where unit tests are written}
+\item{tests_path}{Directory where unit tests are written}
 }
 \value{
 A \code{list} with a format that matches the external grading specification.
