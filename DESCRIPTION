@@ -1,0 +1,26 @@
+Package: pltest
+Title: PrairieLearn Autograde Testing with R
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "James",
+           family = "Balamuta",
+           role = c("aut", "cre"),
+           email = "balamut2@illinois.edu",
+           comment = c(ORCID = "0000-0003-2826-8458"))
+Description: Provides the necessary infrastructure for performing PrairieLearn
+    auto grading operations using R.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    testthat,
+    jsonlite,
+    R6,
+    utils
+Suggests: 
+    covr,
+    knitr,
+    rmarkdown
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
