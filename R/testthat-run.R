@@ -29,7 +29,7 @@ run_testthat = function(tests_path = "testthat") {
   # content to console.
   log <- utils::capture.output({
     test_data <- as.data.frame(testthat::test_dir(tests_path,
-                              reporter = CustomListReporter))
+                              reporter = testthat::ListReporter))
   })
   
   test_results = format_testthat_to_pl(test_data)
