@@ -5,15 +5,15 @@
 \alias{path_answer}
 \title{Path helpers}
 \usage{
-path_student(file_name, fixed_path = FALSE)
+path_student(file_name, fixed_path = TRUE)
 
-path_answer(file_name, fixed_path = FALSE)
+path_answer(file_name, fixed_path = TRUE)
 }
 \arguments{
 \item{file_name}{Name of the file to construct the file path.}
 
 \item{fixed_path}{Create an absolute (e.g. root \verb{/} path) or relative.
-Default is a relative path.}
+Default is an absolute path.}
 }
 \description{
 Expand path to code file location on a PL grader container.
