@@ -32,7 +32,7 @@ run_testthat = function(tests_path = "testthat") {
                               reporter = testthat::ListReporter))
   })
   
-  test_results = format_testthat_to_pl(test_data)
+  test_results = format_testthat_to_pl(test_info(test_data))
   
   # Output is manipulated from the run.sh file into results.json
   jsonlite::write_json(
