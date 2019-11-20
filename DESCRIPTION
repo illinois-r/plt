@@ -16,11 +16,12 @@ Imports:
     testthat (>= 2.3.0),
     jsonlite,
     R6,
-    utils
+    utils,
+    unix
 Suggests: 
     covr,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.0
